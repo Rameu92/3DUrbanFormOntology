@@ -1,0 +1,1529 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm/"
+     xml:base="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#"
+     xmlns:DUrbanForm="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#"
+     xmlns:untitled-ontology-18="http://www.semanticweb.org/ramireze/ontologies/2024/4/untitled-ontology-18#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm">
+        <rdfs:comment>&quot;Locus&quot; (page, section)?</rdfs:comment>
+        <rdfs:comment>Fourth Attempt</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPosition -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionX -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionY -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasDatum -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasDatum">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#isDatumOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasExtent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasExtent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#isExtentOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Domain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasMeaning -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasMeaning">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#isMeaningOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#isSupportOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Support"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#isDatumOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#isDatumOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#isExtentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#isExtentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#isMeaningOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#isMeaningOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#isSupportOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#isSupportOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasAdministrativeLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasAdministrativeLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Domain"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasLanguage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasLanguage">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasOfficialName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasOfficialName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSemantics -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSemantics">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#isBinding -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#isBinding">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#isPrescriptive -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#isPrescriptive">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Domain"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Support"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">300.31966583965726</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">76.26606008568754</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Density -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Density">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">206.7740623140546</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">173.92501443541173</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Design_Coherence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Design_Coherence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">122.9922486682498</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">276.8751966846043</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Domain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Domain">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.549590429977975</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">264.06317788382853</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#France -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#France">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Domain"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">17.706259329830928</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">110.57016497270665</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Hazard_Mitigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Hazard_Mitigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">169.35625005315845</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">102.1371749090354</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Height -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Height">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">235.16442102503754</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">102.60121988410768</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Support"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">117.23620893862959</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">23.4603560989768</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Madrid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Madrid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Spain"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.925732265174323</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">217.1963998187542</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Nanterre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Nanterre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#France"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">188.07428867596497</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">74.12215883131618</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Overlooking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Overlooking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">218.29951088575478</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">204.4180671375678</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Rivas_Vaciamadrid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Rivas_Vaciamadrid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Madrid"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">13.30258153845589</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">167.47570773520349</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Spain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Spain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Domain"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">197.86657880063117</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">197.78302057854023</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Support">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">249.40985663693303</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">286.04038839204725</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Switzerland -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Switzerland">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Domain"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">108.13855148672417</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">128.11696394151747</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Value_Capacity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Value_Capacity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.550696446198316</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">221.7110004178366</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Volume -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Volume">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">230.87693522025586</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">134.29570965052292</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">32.153715275522664</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">157.31569907543303</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Biel/Bienne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Biel/Bienne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Switzerland"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">210.81427484621761</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">294.4868512391219</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Area -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Area">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Volume"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_1"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_3"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Height -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Height">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Volume"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art19"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP2"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP3"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_4"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Length -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Length">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Volume"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art16"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art9"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_FIMR_1"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_FIMR_2"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art11"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art6"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Width -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Width">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Volume"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art16"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art9"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_FIMR_3"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art7"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Envelpe_Area -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Envelpe_Area">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Volume"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Floor_Area -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Floor_Area">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Density"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art10_1_2"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art10_4"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art20"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Footprint_Area -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Footprint_Area">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Density"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art10_3"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art10_4"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP1"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP5"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art8"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art9-2"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Height -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Height">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Height"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art17"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP4"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Number_Storeys -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Number_Storeys">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Density"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Orientation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Orientation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Overlooking"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Perimeter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Perimeter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Volume"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Volume -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Volume">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Volume"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        <DUrbanForm:isMeaningOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Wall_Area -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Wall_Area">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Volume"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art10_1_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art10_1_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Floor_Area"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_OSC_Bienne"/>
+        <DUrbanForm:hasSemantics>Avant-corps dans l&apos;espace formé par la distance à la limite, avant-corps ouverts</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art10_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art10_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Footprint_Area"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_OSC_Bienne"/>
+        <DUrbanForm:hasSemantics>Avant-corps dans l&apos;espace formé par la distance à la limite, avant-corps fermés</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art10_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art10_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Floor_Area"/>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Footprint_Area"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_OSC_Bienne"/>
+        <DUrbanForm:hasSemantics>Avant-corps dans l&apos;espace formé par la distance à la limite, acant-corps ouvers et fermés</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Length"/>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Width"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_OSC_Bienne"/>
+        <DUrbanForm:hasSemantics>Longueur et profondeur d&apos;un batiment</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Height"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_OSC_Bienne"/>
+        <DUrbanForm:hasSemantics>Hauteur d&apos;un batiment</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art19">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Height"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_OSC_Bienne"/>
+        <DUrbanForm:hasSemantics>Formes de toit particulières</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Floor_Area"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_OSC_Bienne"/>
+        <DUrbanForm:hasSemantics>Nuveaux en attique</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Length"/>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Width"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_OSC_Bienne"/>
+        <DUrbanForm:hasSemantics>Distances à la limite par rapport au terrain adjacent</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_FIMR_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_FIMR_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Length"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_ZDC_Nanterre"/>
+        <DUrbanForm:hasSemantics>Filets d&apos;implantation et marges de recul
+Filet d&apos;implantation</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_FIMR_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_FIMR_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Length"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_ZDC_Nanterre"/>
+        <DUrbanForm:hasSemantics>Filets d&apos;implantation et marges de recul
+FIlet d&apos;implantation discontinu</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_FIMR_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_FIMR_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Width"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_ZDC_Nanterre"/>
+        <DUrbanForm:hasSemantics>Filets d&apos;implantation et marges de recul
+Marge de recul</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Footprint_Area"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_ZDC_Nanterre"/>
+        <DUrbanForm:hasSemantics>Prescriptions Graphiques Particulieres
+Emprise constructible</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Height"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_ZDC_Nanterre"/>
+        <DUrbanForm:hasSemantics>Prescriptions Graphiques Particulieres
+Point d&apos;attache pour la hauteur des batiments</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Height"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_ZDC_Nanterre"/>
+        <DUrbanForm:hasSemantics>Prescriptions Graphiques Particulieres
+Limite entre hauteurs plafonds sur une surface continue d&apos;emprise constructible</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Height"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_ZDC_Nanterre"/>
+        <DUrbanForm:hasSemantics>Prescriptions Graphiques Particulieres
+Hauteur maximale des constructions</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Footprint_Area"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_ZDC_Nanterre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Height"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PLU_Nanterre"/>
+        <DUrbanForm:hasSemantics>Hauteur maximale des constructions</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Length"/>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Volume"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PLU_Nanterre"/>
+        <DUrbanForm:hasSemantics>Aspect exterieur des constructions et amenaement de leurs abords</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Length"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PLU_Nanterre"/>
+        <DUrbanForm:hasSemantics>Implantation des constructions par rpport aux voies et emprises publiques</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Width"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PLU_Nanterre"/>
+        <DUrbanForm:hasSemantics>Implantation des constructions par rapport aux limites separatives</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Footprint_Area"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PLU_Nanterre"/>
+        <DUrbanForm:hasSemantics>Implantation des constructions les unes par rapport aux autres sur une meme propiete</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art9-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art9-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Footprint_Area"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PLU_Nanterre"/>
+        <DUrbanForm:hasSemantics>L&apos;emprise au sol des constructions</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Area"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PGOU_RivasVaciamadrid"/>
+        <DUrbanForm:hasSemantics>La forma de la parcela permitirá la inscripción de un círculo de diámetro igual o superior a 6m</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Footprint_Area"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PGOU_RivasVaciamadrid"/>
+        <DUrbanForm:hasSemantics>Se podrán construir como máximo 0,4m2 por cada m2 de superficie d eparcela neta, incluidas zonas comunes.</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Area"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PGOU_RivasVaciamadrid"/>
+        <DUrbanForm:hasSemantics>Ocupación máxima 80%</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Height"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PGOU_RivasVaciamadrid"/>
+        <DUrbanForm:hasSemantics>Altura máxima: B+1+AR</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Area"/>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Floor_Area"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PGOU_RivasVaciamadrid"/>
+        <DUrbanForm:hasSemantics>La ocupación máxima permitida es la que resulte de aplicar retranqueos sin superar el 30% sobre o bajo rasante, incluidas zonas comunes</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Height"/>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Number_Storeys"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PGOU_RivasVaciamadrid"/>
+        <DUrbanForm:hasSemantics>Como máximo se podrán levantar 2 plantas con una altura máxima de 7m a cornisa</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Data"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#hasSupport"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            </owl:Restriction>
+        </rdf:type>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Length"/>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Bounding_Box_Width"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PGOU_RivasVaciamadrid"/>
+        <DUrbanForm:hasSemantics>Los retranqueos a todos los linderos serán como minimo de 3m</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A189 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A189">
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Height"/>
+        <DUrbanForm:hasMeaning rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Char_Number_Storeys"/>
+        <DUrbanForm:isDatumOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PGOU_RivasVaciamadrid"/>
+        <DUrbanForm:hasSemantics>Altura máxima reguladora y número máximo de plantas</DUrbanForm:hasSemantics>
+        <DUrbanForm:isPrescriptive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isPrescriptive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_OSC_Bienne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_OSC_Bienne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art10_1_2"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art10_3"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art10_4"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art16"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art17"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art19"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art20"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Bienne_OSC_Art9"/>
+        <DUrbanForm:hasExtent rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Ville_Bienne"/>
+        <DUrbanForm:hasSupport rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Support_Digital_Text"/>
+        <DUrbanForm:hasLanguage>FR</DUrbanForm:hasLanguage>
+        <DUrbanForm:hasOfficialName>Ordonnance sur les constructions de la Ville de Bienne</DUrbanForm:hasOfficialName>
+        <DUrbanForm:isBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isBinding>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PGOU_RivasVaciamadrid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PGOU_RivasVaciamadrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_1"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_2"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_3"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_4"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_5"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_6"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_RivasVaciamadrid_PGOU_A138Z4_7"/>
+        <DUrbanForm:hasExtent rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Zona_4"/>
+        <DUrbanForm:hasSupport rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Support_Digital_Text"/>
+        <DUrbanForm:hasLanguage>ES</DUrbanForm:hasLanguage>
+        <DUrbanForm:hasOfficialName>Plan General de Ordenación Urbana</DUrbanForm:hasOfficialName>
+        <DUrbanForm:isBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isBinding>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PLU_Nanterre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PLU_Nanterre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art10"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art11"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art6"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art7"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art8"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_UE_Art9-2"/>
+        <DUrbanForm:hasExtent rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Zone_UE"/>
+        <DUrbanForm:hasSupport rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Support_Digital_Text"/>
+        <DUrbanForm:hasLanguage>FR</DUrbanForm:hasLanguage>
+        <DUrbanForm:hasOfficialName>Plan Local dUrbanisme / Ville de Nanterre / EPT POLD</DUrbanForm:hasOfficialName>
+        <DUrbanForm:isBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isBinding>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_ZDC_Nanterre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_ZDC_Nanterre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_FIMR_1"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_FIMR_2"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_FIMR_3"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP1"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP2"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP3"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP4"/>
+        <DUrbanForm:hasDatum rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Datum_Nanterre_Map_PGP5"/>
+        <DUrbanForm:hasExtent rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Zone_UE"/>
+        <DUrbanForm:hasSupport rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Support_Digital_Map"/>
+        <DUrbanForm:hasLanguage>FR</DUrbanForm:hasLanguage>
+        <DUrbanForm:hasOfficialName>Réglement Graphique</DUrbanForm:hasOfficialName>
+        <DUrbanForm:isBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</DUrbanForm:isBinding>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Support_Digital_Map -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Support_Digital_Map">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Support"/>
+        <DUrbanForm:isSupportOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_ZDC_Nanterre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Support_Digital_Text -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Support_Digital_Text">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Support"/>
+        <DUrbanForm:isSupportOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_OSC_Bienne"/>
+        <DUrbanForm:isSupportOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PGOU_RivasVaciamadrid"/>
+        <DUrbanForm:isSupportOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PLU_Nanterre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Ville_Bienne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Ville_Bienne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Domain"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Biel/Bienne"/>
+        <DUrbanForm:isExtentOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_OSC_Bienne"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Zona_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Zona_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Domain"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Rivas_Vaciamadrid"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Spain"/>
+        <DUrbanForm:isExtentOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PGOU_RivasVaciamadrid"/>
+        <DUrbanForm:hasAdministrativeLevel>Municipality</DUrbanForm:hasAdministrativeLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Zone_UE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Zone_UE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Domain"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Nanterre"/>
+        <DUrbanForm:isExtentOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_PLU_Nanterre"/>
+        <DUrbanForm:isExtentOf rdf:resource="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Inst_ZDC_Nanterre"/>
+        <DUrbanForm:hasAdministrativeLevel>Municipality</DUrbanForm:hasAdministrativeLevel>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15.26103101568031</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">239.90123100680088</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">94.85382640060884</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">220.24643571730368</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">110.86209691405432</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">93.97476905994442</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">204.0851790909283</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">95.9713108617199</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">18.18561784254733</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">165.09620152298714</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.56281538491595</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">150.76757160785087</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">236.11424642392186</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">275.74719424502274</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">107.69618847719576</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">221.60287883970395</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">172.0068800654911</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">29.90463538852489</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">95.64049734056991</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">105.8900510704076</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15.20876106239651</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">108.46653663865015</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">48.8267758657972</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">236.81959851362447</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">87.90898839104956</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">292.5873949492786</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">55.5082914295737</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">292.4461045064668</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">297.82216360506436</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">90.84257483477609</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">151.19186204756332</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">257.7250800075145</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">288.3644784607754</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">211.0973896775219</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">121.63003316975096</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">203.76124225218484</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">135.0187079726667</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">284.5467459199948</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">189.64033784945912</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">297.77738147787096</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">156.86403156088883</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">39.70930764876034</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">299.803110806859</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">45.34068741537264</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">57.61244102793018</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">225.16676243547673</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">114.41296027243634</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">188.96641345352336</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.733912571175842</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">294.341122188897</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">63.98584766797298</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">184.33575080205958</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">164.59314909484306</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">267.2070464017929</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Density"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Design_Coherence"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Hazard_Mitigation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Height"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Overlooking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Value_Capacity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Volume"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Density"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Hazard_Mitigation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Height"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Overlooking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Value_Capacity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Volume"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Domain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Instrument"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#Support"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramireze/ontologies/2024/4/3DUrbanForm#3DFormCharacter"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
